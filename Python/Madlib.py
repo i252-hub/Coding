@@ -1,17 +1,36 @@
-import random
+print("Welcome to Madlib!\n----------------------------------------------")
+verb_one = input("Verb: ")
+noun_one = input("Common Noun: ")
+noun_two = input("Common Noun: ")
+noun_three = input("Proper Noun: ")
+verb_two = input("Verb: ")
+verb_three = input("Verb: ")
+noun_four = input("Proper Noun: ")
+noun_five = input("Common Noun: ")
+verb_four = input("Verb: ")
+noun_six = input("Common Noun: ")
+verb_five = input("Verb: ")
+verb_six = input("Verb: ")
+verb_seven = input("Verb: ")
+noun_seven = input("Common Noun: ")
+adverb = input("Adverb: ")
+verb_eight = input("Present Tense Verb: ")
 
-def number(x):
-    random.randint(1,x)
-    guess = 0
-    while guess != number:
 
-        message = int(input(f"Guess the number between 1 and {x}: "))
+hello = f"You {verb_one} my {noun_one} but not my {noun_two}. {noun_three} {verb_two},\
+you didn't know what to {verb_three}. A {noun_four} {noun_five} speak in silence \
+    and it {verb_four} the {noun_six} that was once given.  Silence {verb_five} a thousand\
+    words and yet it was never once {verb_six}. I {verb_seven} you into the\
+        {noun_seven} of my soul, {adverb} noticed\
+            that you were {verb_eight} underneath of it.\
+                I noticed you wore a lot of masks,\
+                    that I thought you became one. Losing you\
+                        was never a loss and yet I searched\
+                            for every piece that reminded me\
+                                of you and left some tears\
+                                    everytime. You were\
+                                        like the sky who cannot swim\
+                                            in the depth of my soul, and likewise\
+                                                how I can never reach yours. "
 
-        if message < 60:
-            print("Incorrect. It must be a higher number")
-        elif message > 60:
-            print("Incorrect.  It must be lower number")
-        else:
-            print("Correct!")
-    
-number(100)
+print(hello)

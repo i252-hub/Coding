@@ -1,0 +1,109 @@
+//Higher Order Functions-----------------------------
+
+
+/* For Each
+``> The for each function gives back a callback function
+with elements. The index parameter, and array itself are
+optional.
+
+   map
+``> It returns and modifies a new array.
+
+   filter
+``> Filter conditions and return a new array
+
+Callback function - It is a function which can be passed as parameter to other function.
+
+``> Reduce
+    -It takes a callback function.
+    -The callback function takes accumulator value, current value, and
+     optional initial value
+     -It returns a single value
+
+*/
+
+/*const countries = [{name: "Finland", letter: "F"}, {name: "Sweden", letter: "S"},
+{name: "Denmark", letter: "D"}, {name: "Norway", letter: "N"},
+{name: "IceLand", letter: "I"}, {name: "Switzerland", letter: "S"}]
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const products = [
+  { product: 'banana', price: 3 },
+  { product: 'mango', price: 6 },
+  { product: 'potato', price: null },
+  { product: 'avocado', price: 8 },
+  { product: 'coffee', price: 10 },
+  { product: 'tea', price: null },
+]*/
+//find
+//finds the element in the array according to condition
+//findIndex
+//finds the index of the element acc to condition
+
+//const first_country = countries.find((country)=> country.length === 6 )
+//console.log(first_country)
+
+//const first_country = countries.findIndex((country)=> country.length === 6 )
+//console.log(first_country)
+
+//const first_country = countries.findIndex((country)=> country === 'Russia')
+//console.log(first_country)
+
+//const total_price = products.map((prc)=> prc.price).filter((prc) => prc !== null).reduce((acc, cur) => acc + cur,0)
+//console.log(total_price)
+
+/*2. Declare a function called categorize Countries which returns an array of countries
+ which have some common pattern(you find the countries array in this repository
+ as countries.js(eg 'land', 'ia', 'island','stan')). (check)
+/
+ 
+  3. Create a function which return an array of objects, which is the letter and
+   the number of times the letter use to start with a name of a country.
+    const countriesLetter = countries.map((country) => country.letter).reduce(function (acc, curr) {
+      return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+    }, {});
+   console.log(countriesLetter);
+
+  4. Declare a getFirstTenCountries function and return an array of ten countries. 
+  Use different functional programming to work on the countries.js array
+  const getLastTenCountries = countries.map((country) => country.toUpperCase())
+   console.log(getFirstTenCountries.slice(0,9))
+/
+  5. Declare a getLastTenCountries function which which returns the last ten countries
+   in the countries array.
+/const getLastTenCountries = countries.map((country) => country.toUpperCase())
+   console.log(getLastTenCountries.slice(7,17))
+  6. Find out which letter is used many times as initial for a country name
+   from the countries array (eg. Finland, Fiji, France etc)*/
+
+   //const categorizeCountries = countries.toString((country)=> country.length === 4).match(/land/gi).length
+   //console.log(categorizeCountries)
+
+ 
+
+   /*const sortCountries = countries_data.map((country) => {
+     
+       var sort = "Country: " + country.name + ", " + "Capital: " + country.cap + ", " + "Population: " + country.pop
+       return sort
+   })
+
+   console.log(sortCountries)
+*/
+/*
+   const countLang = countries_data.map((country)=>
+   country.languages[0]).reduce(function (acc, curr) {
+      return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+    }, {})
+   console.log(countLang)*/
+
+   // a callback function, the name of the function could be any name
+
+   /* const countLang = countries_data
+  .map((country) => country.languages) // Extract all languages arrays
+  .flat() 
+  .reduce(function (acc, curr) {
+    return (acc[curr] = (acc[curr] || 0) + 1), acc; // Count occurrences of each language
+  }, {})
+  console.log(countLang)*/
+
+ 

@@ -1,0 +1,103 @@
+ /*let a = [1,2,3,4,5]
+    let b = [2,4,6,8]
+    //let c = [...a,...b]
+
+    let A = new Set(a)
+    let B = new Set(b)
+    //let C = new Set(c)
+    let c = a.filter((num)=> !B.has(num))
+       console.log(c)
+*/
+
+/*const constants = [2.72, 3.14, 9.81, 37, 100]
+
+let [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants
+console.log(e, pi, gravity, humanBodyTemp, waterBoilingTemp)
+*/
+
+/*const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+let [fin, est, sw, den, nor] = countries
+console.log(fin, est, sw, den, nor)
+  */
+
+/*const rectangle = {
+    width: 20,
+    height: 10,
+    area: 200,
+    perimeter: 60
+  }
+  
+  let {width, height,area,perimeter} = rectangle
+  console.log(width, height,area,perimeter)
+  */
+/*
+  const users = [
+    {
+      name:'Brook',
+      scores:75,
+      skills:['HTM', 'CSS', 'JS'],
+      age:16
+    },
+    {
+      name:'Alex',
+      scores:80,
+      skills:['HTM', 'CSS', 'JS'],
+      age:18
+    },
+    {
+      name:'David',
+      scores:75,
+      skills:['HTM', 'CSS'],
+      age:22
+    },
+    {
+      name:'John',
+      scores:85,
+      skills:['HTML'],
+      age:25
+    },
+    {
+      name:'Sara',
+      scores:95,
+      skills:['HTM', 'CSS', 'JS'],
+      age: 26
+    },
+    {
+      name:'Martha',
+      scores:80,
+      skills:['HTM', 'CSS', 'JS'],
+      age:18
+    },
+    {
+      name:'Thomas',
+      scores:90,
+      skills:['HTM', 'CSS', 'JS'],
+      age:20
+    }
+    ]
+
+    for (const {name,skills} of users){
+      if(skills.length<2){
+        console.log(name,skills)
+      }
+    }
+
+    */
+/*
+    const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+    let [name, skills, jsScore, reactScore] = student
+    console.log(name, skills.length, jsScore, reactScore)
+    */
+/*
+    const students = [
+        ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+        ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+      ]
+
+function convertArrayToObject(){
+   students.assign({},  ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]);
+   students.assign({},['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]);
+}
+
+console.log(convertArrayToObject())*/
+      

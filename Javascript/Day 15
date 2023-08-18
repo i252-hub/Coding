@@ -1,0 +1,176 @@
+/*class Animal{
+constructor(name,age,color,legs){
+    this.name = name
+    this.age = age
+    this.color = color
+    this.legs = legs
+}
+
+animal(){
+    const animal = "I am a" + this.name
+    return animal
+}
+}
+
+class Dog extends Animal{
+    constructor(name,age,color,legs,breed){
+        super(name,age,color,legs,breed)
+        this.breed = breed
+    }
+
+    animal(){
+        const animal = "I am a " + this.name
+        return animal
+    }
+    dog(){
+       
+       const dog = "arf arf"
+       return dog
+    }
+}
+
+class Cat extends Animal{
+    constructor(name,age,color,legs,breed){
+        super(name,age,color,legs)
+        this.breed = breed
+    }
+
+    animal(){
+        const animal = "I am a " + this.name
+        return animal
+    }
+     cat(){
+    const cat = "meow meow"
+    return cat
+   }
+}
+const c1 = new Dog('Dog ', 25, 'Brown', 4,'Golden Retriever')
+const c2 = new Cat('Cat ', 15, 'Mixed', 6,'Persian')
+console.log(c1)
+console.log(c2)
+console.log(c1.animal()+ c1.dog())
+console.log(c2.animal() + c2.cat())*/
+
+
+/*
+console.log('Count:', statistics.count()) // 25
+console.log('Sum: ', statistics.sum()) // 744
+console.log('Min: ', statistics.min()) // 24
+console.log('Max: ', statistics.max()) // 38
+console.log('Range: ', statistics.range() // 14
+console.log('Mean: ', statistics.mean()) // 30
+console.log('Median: ',statistics.median()) // 29
+console.log('Mode: ', statistics.mode()) // {'mode': 26, 'count': 5}
+console.log('Variance: ',statistics.var()) // 17.5
+console.log('Standard Deviation: ', statistics.std()) // 4.2
+console.log('Variance: ',statistics.var()) // 17.5
+console.log('Frequency Distribution: ',statistics.freqDist()) // [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+
+ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
+
+class Stats{
+    constructor(count,sum,min,max,range,mean,median,mode){
+        this.count = count
+        this.sum = sum
+        this.min = min
+        this.max = max
+        this.range = range
+        this.mean = mean
+        this.median = median
+        this.mode = mode
+    }
+
+    Count(){
+        const count = ages.length
+        return count;    
+    }
+
+    Sum(){
+       const s = ages.reduce((partialSum, a) => partialSum + a, 0);
+       return s;
+    }
+
+    Min(){
+        const min = Math.min.apply(Math, ages);
+        return min;
+
+    }
+
+    Max(){
+        const max = Math.max.apply(Math, ages);
+        return max;
+    }
+
+    Range(){
+        const range = this.Max() - this.Min()
+        return range;
+    }
+
+    Mean(){
+        const mean = Math.round(this.Sum()/this.Count())
+        return mean;
+    }
+
+
+    
+}
+
+const result = new Stats()
+console.log(result.Count())
+console.log(result.Sum())
+console.log(result.Min())
+console.log(result.Max())
+console.log(result.Range())
+console.log(result.Mean())
+
+*/
+
+class PersonAccount{
+    constructor(firstname,lastname,incomes,expenses) {
+        this.firstname = firstname
+        this.lastname = lastname
+        this.incomes= incomes
+        this.expenses = expenses
+    }
+
+    totalIncome(){
+        const income = this.incomes.reduce((partialSum, a) => partialSum + a, 0);
+        return income;
+    }
+
+    totalExpense(){
+        const expense = this.expenses.reduce((partialSum, a) => partialSum + a, 0);
+        return expense;
+    }
+
+    accountInfo(){
+        const info = this.firstname+' '+this.lastname+":\n"+"Total Income - "+this.totalIncome()+' || '+'Total Expenses: '+this.totalExpense()
+        return info;
+    }
+
+    addIncome(){
+        const add = 600000
+       const one = this.incomes.push(add)
+       return one;
+    }
+
+    addExpense(){
+        const subtract = 30000
+        const two = this.expenses.push(subtract)
+        return two;
+    }
+
+    accountBalance(){
+        console.log(this.totalIncome()+ this.addIncome())
+       
+    }
+}
+
+
+const account = new PersonAccount('Astrid','Lombardi', [50000,10000,18000], [14000,5000,7000])
+console.log(account.totalIncome())
+console.log(account.totalExpense())
+console.log(account.addIncome())
+console.log(account.addExpense())
+console.log(account.accountBalance())
+

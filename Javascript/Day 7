@@ -1,0 +1,217 @@
+/*function fullName(){
+    console.log("Kirsten")
+}
+fullName()*/
+
+/*function fullName(firstName, lastName){
+    console.log(firstName+' '+lastName+ ", Congratulations.")
+}
+fullName('Victorique', 'Morris')*/
+
+/*function addNumbers(firstNumber, secondNumber){
+ sum = firstNumber + secondNumber
+ return sum
+}
+console.log(addNumbers(parseInt(Math.random()*10), parseInt(Math.random()*10)))*/
+
+/*function areaOfRectangle(len, wid){
+  area = len * wid
+  return area
+}
+
+console.log(areaOfRectangle(parseInt(Math.random()*10), parseInt(Math.random()*10)))*/
+
+/*const perimeter = (len, wid) => {
+    per = 2 * (len + wid)
+    return per
+}
+console.log(perimeter(1,1))*/
+
+/*function volumeOfRectPrism(len, wid,hei){
+
+
+ vol = len*wid*hei
+ return vol
+}
+console.log(volumeOfRectPrism(10,4,2))*/
+
+/*const density = (mass, vol) =>{
+    den = mass/vol
+    return den
+}
+console.log(density(8,10))*/
+
+/*const convertCelsiusToFahrenheit = oC =>{
+    oF = (oC * 9/5) + 32
+    return oF
+}
+console.log(convertCelsiusToFahrenheit(8.9))*/
+
+/*const bmi = (weight, height)=>{
+    result = weight/(height*height)
+    if(result < 18.5){
+        console.log("Underweight")
+    }
+    else if(result>= 18.5 && result < 24.9){
+        console.log("Normalweight")
+    }
+    else if(result>= 25 && result < 29.9){
+        console.log("Overweight")
+    }
+    else{
+        console.log("Obese")
+
+    }
+    return result
+}
+bmi(65,1.6764)*/
+
+/*const checkSeason = n =>{
+    spring = ['March', 'April', 'May']
+    summer = ['June', 'July', 'August']
+    fall = ['September', 'October', 'November']
+    winter = ['December', 'January', 'February']
+
+    if(n === spring[0]){
+        console.log('itz spring')
+    }
+    return n
+    }
+
+checkSeason('March')*/
+
+/*const findMax = (a,b,c)=>{
+    if(a>b && a > c){
+        return a
+    }
+    else if(b>a && b>c){
+        return b
+    }
+    else{
+        return c
+    }
+}
+console.log(findMax(0,-10,-5))*/
+
+//------------------LEVEL ii------------------------//
+
+// ax + by + c = 0
+/*const solveLinEquation = (a,b,c)=>{
+    console.log(a+'x'+' + '+b+'y'+' + '+c +' = '+ '0')
+    console.log('a = '+ a + ' b = ' + b + ' c = ' + c)
+}
+solveLinEquation(parseInt(Math.random()*10),parseInt(Math.random()*10),parseInt(Math.random()*10))*/
+
+/*const printArray = (...array)=>{
+    console.log(array)
+}
+
+printArray('Chocolate', 'Cookies and Cream', 'Coffee Crumble')*/
+
+/*function showDateTime(){
+   const today = new Date()
+    month = today.getMonth()+1
+    date = today.getDate()
+    yr = today.getFullYear()
+    hrs = today.getHours()
+    min = today.getMinutes()
+
+    console.log(month+'/'+ ('0'+date).slice(-2) + '/' + yr + ' ' + ('0' + hrs).slice(-2)
+    +':'+('0'+min).slice(-2))
+}
+showDateTime()*/
+
+/*const swapValues = (a, b) =>{
+    console.log(b,a)
+}
+
+swapValues(9,6)*/
+
+/*const reverseArray = (...rev)=>{
+  for(i=rev.length-1; i>=0;i--){
+    console.log(rev[i])
+  }
+}
+reverseArray(1,2,3,4)*/
+
+/*const capitalizeArray = (...str)=>{
+  
+    hello = str.toString().toUpperCase()
+    console.log(hello.split())
+}
+capitalizeArray('flying', ' mystery',' art')*/
+
+/*function addItem(...item){
+    
+    pop = item.pop()
+   console.log([pop])
+}
+addItem('remote', 'cellphone', 'fan', 'table')*/
+
+
+
+/*const numbers = (...arr)=>{
+ even = []
+ odd =[]
+arr.pop()
+    for(i=0;i<101;i++){
+        arr.push(i)
+        if((i%2===0)!=1){
+            even.push(i)
+              }
+
+        else{
+            odd.push(i)
+        }
+
+        
+    }
+
+ console.log(even.length,odd.length)
+
+
+ 
+  
+   
+    
+}
+numbers(100)*/
+
+//Write a function which takes any number of arguments and return the sum of the arguments
+/*const sum = (...numbers)=> {
+    no = 0
+    for(i=0;i<numbers.length; i++){
+        no+=numbers[i]
+        
+    }
+
+    return no
+}
+console.log(sum(1,2,3), sum(1,2,3,4))*/
+
+/*const randomUserIp = (a,b,c,d)=>{
+            user = a + '.'+ b+'.'+c+'.'+d
+            return user
+
+            
+}
+console.log(randomUserIp(Math.floor(Math.random()*(200-100+1)+100), 
+Math.floor(Math.random()*(300-100+1)+100),Math.floor(Math.random()*(150-100+1)+100),
+Math.floor(Math.random()*(10-1+1)+10)))*/
+/*
+function userIdGeneratedByUser(){
+
+    char_no = parseInt(prompt('Number of characters: '))
+    ids_no = parseInt(prompt('Number of ids: '))
+
+    for(i=1;i<5;i++){
+       
+        document.getElementById('name').innerHTML = i
+    }
+}
+userIdGeneratedByUser()*/
+
+
+
+
+

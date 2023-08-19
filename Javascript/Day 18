@@ -1,0 +1,82 @@
+/*
+
+function learn(call_reward){
+    console.log("I'm learning Javascript.")
+    call_reward()
+}
+
+function reward(){
+    console.log("You earned a skill+")
+}
+
+learn(reward)*/
+
+/*
+const countriesAPI = 'https://restcountries.com/v2/all'
+fetch(countriesAPI)
+.then(response => response.json)
+.then(data => {
+    console.log(data)
+  })
+  .catch(error => console.error(error))
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(countriesAPI)
+      const countries = await response.json()
+    
+    
+      for(i=0;i<countries.length; i++){
+        console.log("country: "+countries[i].name,"| language: " +countries[i].languages,
+        "| population: " + countries[i].population, "| area: "+countries[i].area)
+      }
+      
+    } catch (err) {
+      console.error(err)
+    }
+  }
+  console.log('===== async and await')
+ 
+  fetchData()
+
+  */
+
+  /*
+  const catsAPI = 'https://api.thecatapi.com/v1/breeds'
+fetch(catsAPI)
+.then(response => response.json)
+.then(data => {
+    console.log(data)
+})
+.catch(error => console.error(error))
+
+
+const fetchData = async () => {
+    try {
+      const response = await fetch(catsAPI)
+      const countries = await response.json()
+        /*
+      for(i=0;i<countries.length;i++){
+
+
+        const catsName = async function (n) {
+            return n 
+          }
+          const value = await catsName(countries[i].name)
+          console.log(value)
+      
+      }*/
+      /*
+      console.log(countries)
+    
+    }
+    catch (err) {
+        console.error(err)
+      }
+    }
+    console.log('===== async and await')
+   
+    fetchData()*/
+    
+
+    

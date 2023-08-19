@@ -1,0 +1,49 @@
+/*
+
+const mess = () =>{
+    let problem = 1
+
+    const home = ()=> {
+        problem--
+        return problem
+    }
+
+    return{
+        home: home()
+    }
+}
+
+const sweet_home = mess()
+console.log(sweet_home.home)*/
+
+/*
+const words =  ()=>{
+
+    const letter ={
+        letter_one: 'a',
+        letter_two: 'b',
+        letter_three: 'c'
+    }
+
+    const a =()=>{
+        return letter.letter_one
+    }
+
+    const b = ()=>{
+        return letter.letter_two
+    }
+
+    const c = ()=>{
+        return letter.letter_three
+    }
+
+    return{
+        a: a(),
+        b: b(),
+        c: c()
+    }
+}
+
+const letter = words()
+console.log(letter.a, letter.b, letter.c)
+*/

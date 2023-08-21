@@ -1,0 +1,118 @@
+//const element = document.querySelector('p')
+/*
+const elementone = document.querySelector("#a")
+const elementtwo = document.querySelector("#b")
+const elementthree = document.querySelector("#c")
+const elementfour = document.querySelector("#d")
+
+console.log(elementone, elementtwo, elementthree,elementfour)*/
+
+/*
+const element = document.querySelectorAll('p')
+for (letter of element){
+    console.log(letter)
+
+}*/
+/*
+const element = document.querySelectorAll("p")
+element[0].setAttribute("id", "letter_a")
+element[0].setAttribute("class", "title")
+element[1].setAttribute("id", "letter_b")
+element[1].setAttribute("class", "title")
+element[2].setAttribute("id", "letter_c")
+element[2].setAttribute("class", "title")
+element[3].setAttribute("id", "letter_d")
+element[3].setAttribute("class", "title")
+
+element[0].style.backgroundColor = "red";
+element[0].style.border= "dotted";
+element[1].style.backgroundColor = "orange";
+element[1].style.border= "groove";
+
+element[2].style.backgroundColor = "yellow";
+element[2].style.border= "solid";
+
+element[3].style.backgroundColor = "green";
+element[3].style.border= "dashed";
+
+element[0].textContent = "Red"
+element[1].textContent = "Orange"
+element[2].textContent = "Yellow"
+element[3].textContent = "Green"
+
+
+
+
+
+for (letter of element){
+
+    element[0].style.color = "green";
+    element[2].style.color = "green";
+    element[1].style.color = "red";
+    element[3].style.color = "red";
+    console.log(letter)
+
+}
+*/
+
+
+const wrap = document.querySelector('div')
+const py = document.querySelector('.py')
+const js = document.querySelector('.js')
+const jsx = document.querySelector('.jsx')
+const full = document.querySelector('.full')
+const r = document.querySelector('.r')
+const mobile = document.querySelector('.mobile')
+const ai = document.querySelector('.ai')
+const ul = document.querySelector('ul')
+
+py.style.backgroundColor = '#9ddb72';
+py.style.padding = "10px";
+py.style.marginBottom = "2px";
+js.style.backgroundColor = 'yellow';
+js.style.marginBottom = "2px";
+js.style.padding = "10px";
+jsx.style.backgroundColor = '#dbb472';
+jsx.style.marginBottom = "2px";
+jsx.style.padding = "10px";
+full.style.backgroundColor = '#dbb472';
+full.style.marginBottom = "2px";
+full.style.padding = "10px";
+r.style.backgroundColor = '#dbb472';
+r.style.marginBottom = "2px";
+r.style.padding = "10px";
+mobile.style.backgroundColor = '#dbb472';
+mobile.style.marginBottom = "2px";
+mobile.style.padding = "10px";
+ai.style.backgroundColor = '#dbb472';
+ai.style.marginBottom = "2px";
+ai.style.padding = "10px";
+
+
+
+const date = new Date()
+const day = document.getElementById('five').innerHTML = date
+const time = document.querySelector('h5')
+time.style.padding = "10px";
+
+let year = document.querySelector("#year");
+let color;
+const chameleon = () => {
+    let random1 = Math.floor(Math.random() * 255)
+    let random2 = Math.floor(Math.random() * 255)
+    let random3 = Math.floor(Math.random() * 255)
+    color = `rgb(${random1},${random2},${random3})`
+    year.style.color = color;
+}
+setInterval(chameleon, 1000)
+
+const chameleon_two = () => {
+    let random1 = Math.floor(Math.random() * 255)
+    let random2 = Math.floor(Math.random() * 255)
+    let random3 = Math.floor(Math.random() * 255)
+    color = `rgb(${random1},${random2},${random3})`
+    time.style.backgroundColor = color;
+}
+setInterval(chameleon_two, 1000)
+
+
